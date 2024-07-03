@@ -9,7 +9,7 @@ body {
 }
 
 header {
-    background-color: #d4af37; /* Gold background */
+    background-color: #c8b273; /* Gold background */
     color: #fff;
     padding: 10px 20px;
     display: flex;
@@ -71,7 +71,7 @@ h1, h2, h3 {
 
 h1 {
     font-size: 2.5em;
-    border-bottom: 2px solid #d4af37;
+    border-bottom: 2px solid #c8b273;
     padding-bottom: 10px;
     margin-bottom: 20px;
 }
@@ -79,7 +79,7 @@ h1 {
 h2 {
     font-size: 2em;
     margin-bottom: 20px;
-    color: #d4af37;
+    color: #c8b273;
 }
 
 h3 {
@@ -96,7 +96,7 @@ p {
 .agent, .listing {
     margin: 20px 0;
     padding: 20px;
-    border: 1px solid #d4af37;
+    border: 1px solid #c8b273;
     border-radius: 5px;
     background-color: #f8f8f8;
     box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
@@ -109,7 +109,7 @@ p {
 }
 
 .agent h3 {
-    color: #d4af37;
+    color: #c8b273;
 }
 
 .listing img {
@@ -131,7 +131,7 @@ form label {
 
 form input, form textarea {
     padding: 10px;
-    border: 1px solid #d4af37;
+    border: 1px solid #c8b273;
     border-radius: 5px;
     font-size: 1em;
 }
@@ -139,7 +139,7 @@ form input, form textarea {
 form button {
     padding: 10px;
     border: none;
-    background-color: #d4af37;
+    background-color: #c8b273;
     color: #fff;
     cursor: pointer;
     border-radius: 5px;
@@ -188,7 +188,7 @@ form button:hover {
 .cta-button {
     padding: 10px 20px;
     border: none;
-    background-color: #d4af37;
+    background-color: #c8b273;
     color: #fff;
     font-size: 1.2em;
     border-radius: 5px;
@@ -208,7 +208,7 @@ form button:hover {
     top: 50%;
     transform: translate(-50%, -50%);
     background-color: #fff;
-    border: 1px solid #d4af37;
+    border: 1px solid #c8b273;
     padding: 20px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     z-index: 1000;
@@ -236,7 +236,7 @@ form button:hover {
     bottom: 20px;
     right: 20px;
     padding: 10px;
-    background-color: #d4af37;
+    background-color: #c8b273;
     color: #fff;
     border: none;
     border-radius: 50%;
@@ -252,7 +252,7 @@ form button:hover {
 footer {
     text-align: center;
     padding: 20px;
-    background-color: #d4af37;
+    background-color: #c8b273;
     color: #fff;
     margin-top: 20px;
     font-size: 0.9em;
