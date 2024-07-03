@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>XZACT Real Estate Group</title>
+    <link rel="stylesheet" href="assets/css/styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <img src="assets/images/logoupdate3white.png" alt="XZACT Real Estate Group Logo" class="logo">
+        <nav>
+            <ul>
+                <li><a href="#about">About Us</a></li>
+                <li><a href="#agents">Agents</a></li>
+                <li><a href="#listings">Property Listings</a></li>
+                <li><a href="#contact">Contact Us</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Landing Page Section -->
+    <section id="landing">
+        <div class="hero">
+            <img src="assets/images/logoupdate3black.png" alt="XZACT Real Estate Group Logo" class="hero-logo">
+            <h1>Welcome to XZACT Real Estate Group</h1>
+            <p>Your dream home awaits</p>
+            <a href="#about" class="cta-button">Learn More</a>
+        </div>
+    </section>
+
+    <main>
+        <section id="about">
+            <h1>About Us</h1>
+            <p>Welcome to XZACT Real Estate Group. Our mission is to provide exceptional service, connecting buyers and sellers with the best real estate opportunities available. We pride ourselves on our dedication to client satisfaction and our deep knowledge of the real estate market.</p>
+            <p>Whether you're looking to buy your dream home or sell your property for the best price, our team of experienced agents is here to guide you through every step of the process.</p>
+        </section>
+
+        <section id="agents">
+            <h2>Our Agents</h2>
+            <div class="agent">
+                <h3>Tim Lambert</h3>
+                <p>Realtor®</p>
+                <p>Contact: 417-402-9090</p>
+                <p>Email: tim@xzackt.com</p>
+            </div>
+            <div class="agent">
+                <h3>Jane Doe</h3>
+                <p>Realtor®</p>
+                <p>Contact: 417-555-1234</p>
+                <p>Email: jane@xzackt.com</p>
+            </div>
+            <div class="agent">
+                <h3>John Smith</h3>
+                <p>Realtor®</p>
+                <p>Contact: 417-555-5678</p>
+                <p>Email: john@xzackt.com</p>
+            </div>
+        </section>
+
+        <section id="listings">
+            <h2>Property Listings</h2>
+            <div class="listing">
+                <img src="assets/images/property1.jpg" alt="Property 1">
+                <h3>Beautiful Family Home</h3>
+                <p>3 Bed, 2 Bath, $250,000</p>
+            </div>
+            <div class="listing">
+                <img src="assets/images/property2.jpg" alt="Property 2">
+                <h3>Modern Apartment</h3>
+                <p>2 Bed, 1 Bath, $200,000</p>
+            </div>
+            <div class="listing">
+                <img src="assets/images/property3.jpg" alt="Property 3">
+                <h3>Luxurious Villa</h3>
+                <p>4 Bed, 3 Bath, $750,000</p>
+            </div>
+        </section>
+
+        <section id="contact">
+            <h2>Contact Us</h2>
+            <form action="forms/contact_form.php" method="post">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required>
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+                <label for="message">Message:</label>
+                <textarea id="message" name="message" required></textarea>
+                <button type="submit">Submit</button>
+            </form>
+        </section>
+    </main>
+
+    <div id="question-popup" class="popup">
+        <form class="popup-content" action="forms/question_form.php" method="post">
+            <span class="close" onclick="closePopup()">&times;</span>
+            <label for="question">Ask Us a Question:</label>
+            <textarea id="question" name="question" required></textarea>
+            <button type="submit">Submit</button>
+        </form>
+    </div>
+
+    <button id="question-btn" onclick="openPopup()">Ask Us a Question</button>
+
+    <footer>
+        <p>&copy; 2024 XZACT Real Estate Group. All rights reserved.</p>
+    </footer>
+
+    <script src="assets/js/scripts.js"></script>
+    <script>
+        function openPopup() {
+            document.getElementById('question-popup').style.display = 'block';
+        }
+
+        function closePopup() {
+            document.getElementById('question-popup').style.display = 'none';
+        }
+
+        // Animation on scroll
+        document.addEventListener('DOMContentLoaded', function() {
+            const sections = document.querySelectorAll('section');
+
+            const observer = new IntersectionObserver(entries => {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        entry.target.classList.add('fade-in');
+                    }
+                });
+            }, {
+                threshold: 0.1
+            });
+
+            sections.forEach(section => {
+                observer.observe(section);
+            });
+        });
+    </script>
+</body>
+</html>
